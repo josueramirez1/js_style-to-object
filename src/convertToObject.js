@@ -15,7 +15,7 @@ function convertToObject(sourceString) {
 
     const trimmedPropArr = trimmedProp.split(':');
 
-    if (trimmedPropArr[0].length >= 2 && trimmedPropArr[1].length > 0) {
+    if (trimmedPropArr[0].length >= 2 && trimmedPropArr[1]) {
       sourceObj[trimmedPropArr[0].trim()] = trimmedPropArr[1].trim();
     }
   }
